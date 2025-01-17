@@ -1,27 +1,33 @@
 # Employee App
 
-This Flutter application fetches employee data from a public API and displays it in a list.
+This Flutter application fetches employee data from the **RandomUser.me** API, caches it locally, and displays it in a list. Users can view detailed information about each employee, including their name, email, phone number, and profile picture.
+
+---
 
 ## Features
 
-- Fetches employee data from `https://jsonplaceholder.typicode.com/users`.
-- Parses JSON responses and maps them to an Employee model.
-- Displays the list of employees with their name, age, and salary.
-- Includes a retry button in case of an error.
+- **Fetches employee data** from `https://randomuser.me/api/?results=10`.
+- **Caches employee data locally** using `shared_preferences` for offline access.
+- **Displays a list of employees** with their name, email, and profile picture.
+- **Shows detailed employee information** on a separate screen, including name, email, and phone number.
+- **Implements error handling** with a retry button in case of API failures.
+- **Displays a loading indicator** while fetching data.
 
-## Screenshot
+---
 
-![Screenshot](screenshot.png)
+## Screenshots
+
+![Employee List](screenshots/employee_list.png)  
+*Employee List Screen*
+
+![Employee Details](screenshots/employee_details.png)  
+*Employee Details Screen*
+
+---
 
 ## How to Run
 
-1. Clone the repository.
-2. Run `flutter pub get` to install dependencies.
-3. Run `flutter run` to start the app.
-
-## Code Structure
-
-- `lib/main.dart`: Main entry point of the application.
-- `lib/models/employee.dart`: Employee model.
-- `lib/services/employee_service.dart`: Service to fetch employee data.
-- `lib/widgets/employee_list.dart`: Widget to display the list of employees.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/MoSwidan/EmployeeApp.git
+   cd EmployeeApp
