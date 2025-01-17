@@ -17,10 +17,10 @@ This Flutter application fetches employee data from the **RandomUser.me** API, c
 
 ## Screenshots
 
-![Employee List](screenshots/employee_list.png)  
+![Employee List](employee_list.png)  
 *Employee List Screen*
 
-![Employee Details](screenshots/employee_details.png)  
+![Employee Details](employee_details.png)  
 *Employee Details Screen*
 
 ---
